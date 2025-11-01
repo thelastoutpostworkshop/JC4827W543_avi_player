@@ -2,6 +2,7 @@
 
 #include "MP3DecoderHelix.h"
 
+#define I2S_DEFAULT_GAIN_LEVEL 1.5f // 0.0f = mute; 0.0f–1.0f = lower volume; 1.0f+ = boost (watch for distortion if you go high)
 #define I2S_OUTPUT_NUM I2S_NUM_0
 #define I2S_DEFAULT_SAMPLE_RATE 48000
 
