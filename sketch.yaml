@@ -11,9 +11,10 @@ profiles:
       - dir: C:\Users\Charles\Documents\Arduino\libraries\libhelix
       - Dev Device Pins (0.0.6)
     programmer: ""
-    port: ""
+    port: COM8
     port_config:
       baudrate: "115200"
+      lineEnding: "\r\n"
       bits: "8"
       parity: none
       stop_bits: one

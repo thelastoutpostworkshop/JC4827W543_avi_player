@@ -68,27 +68,14 @@ Put AVI files in:
   ...
 ```
 
-## Video conversion (FFmpeg)
+## Convert Videos with Video Conversion Studio
 
-This project is configured for **Cinepak video** and currently uses **MP3 audio decode** (`mp3_player_task_start()` in the sketch).
+<p align="center">
+  <a href="https://thelastoutpostworkshop.github.io/video_conversion/">
+    <img src="https://img.shields.io/badge/Open-Video%20Conversion%20Studio-FF6A00?style=for-the-badge" alt="Open Video Conversion Studio">
+  </a>
+</p>
 
-Recommended command:
-
-```bash
-ffmpeg -i input.mp4 -c:v cinepak -q:v 10 -vf "fps=24,scale=480:272" -c:a mp3 -ac 1 -ar 22050 output.avi
-```
-
-Notes:
-
-- Keep width/height multiples of 4 for Cinepak.
-- Lower `-q:v` gives better quality but larger file size.
-- Lower FPS or bitrate can improve playback smoothness on constrained media/cards.
-
-## Build and run
-
-1. Open `JC4827W543_avi_player.ino` in Arduino IDE.
-2. Select board `ESP32S3 Dev Module`.
-3. Install libraries listed above.
-4. Copy AVI files to SD card under `/avi`.
-5. Upload and reset.
-6. Use touch arrows to pick a file and tap play.
+<p align="center">
+  FFmpeg is no longer necessary. There are no complex commands to learn. Just use <a href="https://thelastoutpostworkshop.github.io/video_conversion/"><strong>Video Conversion Studio</strong></a> to prepare AVI files for this player.
+</p>
